@@ -18,3 +18,5 @@ export default class Halfling extends Race {
 
   get maxLifePoints(): number { return this._maxLifePoints; }
 }
+
+// 16.14
