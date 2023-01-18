@@ -1,6 +1,4 @@
-export default abstract class Races {
-  // public name:string;
-  // public dexterity: number;
+export default abstract class Race {
   constructor(
     private readonly _name: string,
     private readonly _dexterity: number,
