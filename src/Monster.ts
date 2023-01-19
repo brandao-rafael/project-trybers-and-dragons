@@ -1,8 +1,8 @@
-import { SimpleFighter } from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 
 export default class Monster implements SimpleFighter {
   constructor(
-    private _lifePoints: number = 85,
+    protected _lifePoints: number = 85,
     private _strength: number = 63,
   ) { }
 
@@ -21,7 +21,7 @@ export default class Monster implements SimpleFighter {
     return this._lifePoints;
   }
 
-  attack(enemy: SimpleFighter): void {
+  attack(enemy: SimpleFighter | Fighter): void {
     enemy.receiveDamage(this._strength);
   }
 }
